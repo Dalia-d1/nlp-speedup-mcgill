@@ -1,11 +1,11 @@
 # NLP Preprocessing Speedup – Dalia Ragab
 
-**77%+ speedup** using **enhanced Quick Sort** vs Merge Sort  
+**97.4% speedup** using **NumPy sort()** vs Python `sorted()`  
 on **20,000 real IMDB sentences** (Hugging Face)
 
 ![Results](dalia_speedup_plot.png)
 
-- **Reproducible** (`seed=42`)  
+- **Reproducible**  
 - **Ready for Prof. Jackie Cheung's NLP efficiency research**  
 - **Seeking full RA** for MSc thesis **Fall 2026**
 
