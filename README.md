@@ -6,15 +6,10 @@ By sorting sentences in a batch by length, padding is minimized, reducing GPU me
 ## Key Highlights
 - Real benchmark: 2000 examples, BERT-base  
 - **45%+ GPU memory saved**  
-- **67% faster inference**  
+- **67.9% faster inference**  
 - Includes plots for memory & time comparisons  
-- Live Gradio demo: [nlp-speedup-demo](https://huggingface.co/spaces/dalia18-11/nlp-speedup-demo)
+- Live Gradio demo: [efficient-collator-demo](https://huggingface.co/spaces/dalia18-11/efficient-collator-demo)
+
+![Benchmark Plot](benchmark_plot.png)
 
 ## Dependencies
-```bash
-torch >= 2.0
-transformers >= 4.30
-datasets >= 2.14
-matplotlib >= 3.7
-tqdm >= 4.65
-gradio >= 5.49
