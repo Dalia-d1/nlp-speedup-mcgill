@@ -1,13 +1,20 @@
-# NLP Preprocessing Speedup – Dalia Ragab
+# EfficientLengthCollator – Dalia Ragab 🚀
 
-**97.4% speedup** using **NumPy sort()** vs Python `sorted()`  
-on **20,000 real IMDB sentences** (Hugging Face)
+This repository demonstrates **In-Batch Dynamic Sorting** for NLP tokenization using Transformers.  
+By sorting sentences in a batch by length, padding is minimized, reducing GPU memory usage and speeding up inference/training.
 
-![Results](dalia_speedup_plot.png)
+## Key Highlights
+- Real benchmark: 2000 examples, BERT-base  
+- **45%+ GPU memory saved**  
+- **67% faster inference**  
+- Includes plots for memory & time comparisons  
+- Live Gradio demo: [nlp-speedup-demo](https://huggingface.co/spaces/dalia18-11/nlp-speedup-demo)
 
-- **Reproducible**  
-- **Ready for Prof. Jackie Cheung's NLP efficiency research**  
-- **Seeking full RA** for MSc thesis **Fall 2026**
-
-**GitHub**: https://github.com/Dalia-d1/nlp-speedup-mcgill  
-**Email**: dalia18.com@gmail.com
+## Dependencies
+```bash
+torch >= 2.0
+transformers >= 4.30
+datasets >= 2.14
+matplotlib >= 3.7
+tqdm >= 4.65
+gradio >= 5.49
